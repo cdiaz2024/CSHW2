@@ -6,7 +6,11 @@
 
 /* eslint-disable */
 import * as React from "react";
-import { getOverrideProps } from "./utils";
+import { useAuth } from "@aws-amplify/ui-react/internal";
+import { useState } from "react";
+import { getOverrideProps, useNavigateAction } from "./utils";
+import { API } from "aws-amplify";
+import { createNote } from "../graphql/mutations";
 import {
   Button,
   Divider,
@@ -18,13 +22,41 @@ import {
   View,
 } from "@aws-amplify/ui-react";
 export default function UINewNote(props) {
-  const { overrides, ...rest } = props;
+  const { note, overrides, ...rest } = props;
+  const authAttributes = useAuth().user?.attributes ?? {};
+  const [
+    textFieldTwoNineSevenSixSixNineTwoTwoValue,
+    setTextFieldTwoNineSevenSixSixNineTwoTwoValue,
+  ] = useState("");
+  const [
+    textFieldTwoNineSevenSixSixNineTwoThreeValue,
+    setTextFieldTwoNineSevenSixSixNineTwoThreeValue,
+  ] = useState("");
+  const [
+    textFieldTwoNineSevenSixSixNineTwoFourValue,
+    setTextFieldTwoNineSevenSixSixNineTwoFourValue,
+  ] = useState("");
+  const iconOnClick = useNavigateAction({ type: "url", url: "/" });
+  const buttonOnClick = async () => {
+    await API.graphql({
+      query: createNote.replaceAll("__typename", ""),
+      variables: {
+        input: {
+          name: textFieldTwoNineSevenSixSixNineTwoTwoValue,
+          author: authAttributes["email"],
+          description: textFieldTwoNineSevenSixSixNineTwoThreeValue,
+          image: textFieldTwoNineSevenSixSixNineTwoFourValue,
+        },
+      },
+    });
+  };
+  const buttonOnMouseOut = useNavigateAction({ type: "url", url: "/" });
   return (
     <Flex
       gap="16px"
       direction="column"
-      width="320px"
-      height="unset"
+      width="430px"
+      height="932px"
       justifyContent="flex-start"
       alignItems="flex-start"
       position="relative"
@@ -70,6 +102,9 @@ export default function UINewNote(props) {
             shrink="0"
             position="relative"
             padding="0px 0px 0px 0px"
+            onClick={() => {
+              iconOnClick();
+            }}
             {...getOverrideProps(overrides, "Icon")}
           >
             <Icon
@@ -200,6 +235,10 @@ export default function UINewNote(props) {
             isDisabled={false}
             labelHidden={false}
             variation="default"
+            value={textFieldTwoNineSevenSixSixNineTwoTwoValue}
+            onChange={(event) => {
+              setTextFieldTwoNineSevenSixSixNineTwoTwoValue(event.target.value);
+            }}
             {...getOverrideProps(overrides, "TextField29766922")}
           ></TextField>
           <TextField
@@ -213,6 +252,12 @@ export default function UINewNote(props) {
             isDisabled={false}
             labelHidden={false}
             variation="default"
+            value={textFieldTwoNineSevenSixSixNineTwoThreeValue}
+            onChange={(event) => {
+              setTextFieldTwoNineSevenSixSixNineTwoThreeValue(
+                event.target.value
+              );
+            }}
             {...getOverrideProps(overrides, "TextField29766923")}
           ></TextField>
           <TextField
@@ -226,6 +271,12 @@ export default function UINewNote(props) {
             isDisabled={false}
             labelHidden={false}
             variation="default"
+            value={textFieldTwoNineSevenSixSixNineTwoFourValue}
+            onChange={(event) => {
+              setTextFieldTwoNineSevenSixSixNineTwoFourValue(
+                event.target.value
+              );
+            }}
             {...getOverrideProps(overrides, "TextField29766924")}
           ></TextField>
         </Flex>
@@ -246,6 +297,12 @@ export default function UINewNote(props) {
           isDisabled={false}
           variation="primary"
           children="Save"
+          onClick={() => {
+            buttonOnClick();
+          }}
+          onMouseOut={() => {
+            buttonOnMouseOut();
+          }}
           {...getOverrideProps(overrides, "Button")}
         ></Button>
       </Flex>

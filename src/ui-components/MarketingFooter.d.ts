@@ -5,7 +5,8 @@
  **************************************************************************/
 
 import * as React from "react";
-import { FlexProps, TextFieldProps, TextProps, ViewProps } from "@aws-amplify/ui-react";
+import { FlexProps, TextProps, ViewProps } from "@aws-amplify/ui-react";
+import { LogoWithTextProps } from "./LogoWithText";
 export declare type EscapeHatchProps = {
     [elementHierarchy: string]: Record<string, unknown>;
 } | null;
@@ -18,27 +19,39 @@ export declare type Variant = {
 };
 export declare type PrimitiveOverrideProps<T> = Partial<T> & React.DOMAttributes<HTMLDivElement>;
 export declare type MarketingFooterOverridesProps = {
-    MarketingFooter?: PrimitiveOverrideProps<ViewProps>;
-    "Rectangle 738"?: PrimitiveOverrideProps<ViewProps>;
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ut labore et dolore magna"?: PrimitiveOverrideProps<TextProps>;
-    "Frame 405"?: PrimitiveOverrideProps<FlexProps>;
-    "Frame 403"?: PrimitiveOverrideProps<FlexProps>;
-    "Lorem ipsum dolor sit amet29766990"?: PrimitiveOverrideProps<TextProps>;
-    "Consectetur adipiscing29766991"?: PrimitiveOverrideProps<TextProps>;
-    "Elit sed do eiusmod29766992"?: PrimitiveOverrideProps<TextProps>;
-    "Tempor incididunt ut labore"?: PrimitiveOverrideProps<TextProps>;
-    "Et dolore magna"?: PrimitiveOverrideProps<TextProps>;
-    "Frame 404"?: PrimitiveOverrideProps<FlexProps>;
-    "Lorem ipsum dolor sit amet29766996"?: PrimitiveOverrideProps<TextProps>;
-    "Consectetur adipiscing29766997"?: PrimitiveOverrideProps<TextProps>;
-    "Elit sed do eiusmod29766998"?: PrimitiveOverrideProps<TextProps>;
-    "Lorem ipsum dolor sit amet 2021"?: PrimitiveOverrideProps<TextProps>;
+    MarketingFooter?: PrimitiveOverrideProps<FlexProps>;
     "Frame 313"?: PrimitiveOverrideProps<FlexProps>;
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna"?: PrimitiveOverrideProps<TextProps>;
-    TextField?: PrimitiveOverrideProps<TextFieldProps>;
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do."?: PrimitiveOverrideProps<TextProps>;
+    "Frame 434"?: PrimitiveOverrideProps<FlexProps>;
+    "Sign up for our newsletter"?: PrimitiveOverrideProps<TextProps>;
+    "No spam. We promise."?: PrimitiveOverrideProps<TextProps>;
+    "Frame 435"?: PrimitiveOverrideProps<FlexProps>;
+    TextField?: PrimitiveOverrideProps<FlexProps>;
+    Button?: PrimitiveOverrideProps<FlexProps>;
+    Divider41172020?: PrimitiveOverrideProps<ViewProps>;
+    "Frame 40541172021"?: PrimitiveOverrideProps<FlexProps>;
+    "Frame 403"?: PrimitiveOverrideProps<FlexProps>;
+    Products?: PrimitiveOverrideProps<TextProps>;
+    Libraries?: PrimitiveOverrideProps<TextProps>;
+    CLI?: PrimitiveOverrideProps<TextProps>;
+    Studio?: PrimitiveOverrideProps<TextProps>;
+    Hosting?: PrimitiveOverrideProps<TextProps>;
+    "Frame 404"?: PrimitiveOverrideProps<FlexProps>;
+    Resources?: PrimitiveOverrideProps<TextProps>;
+    Docs?: PrimitiveOverrideProps<TextProps>;
+    Learn?: PrimitiveOverrideProps<TextProps>;
+    Examples?: PrimitiveOverrideProps<TextProps>;
+    Changelog?: PrimitiveOverrideProps<TextProps>;
+    "Frame 40541172034"?: PrimitiveOverrideProps<FlexProps>;
+    Company?: PrimitiveOverrideProps<TextProps>;
+    "About us"?: PrimitiveOverrideProps<TextProps>;
+    Contact?: PrimitiveOverrideProps<TextProps>;
+    Blog?: PrimitiveOverrideProps<TextProps>;
+    Divider41172039?: PrimitiveOverrideProps<ViewProps>;
+    "Frame 433"?: PrimitiveOverrideProps<FlexProps>;
+    LogoWithText?: LogoWithTextProps;
+    "\u00A9 2023 AWS Amplify UI. All rights reserved."?: PrimitiveOverrideProps<TextProps>;
 } & EscapeHatchProps;
-export declare type MarketingFooterProps = React.PropsWithChildren<Partial<ViewProps> & {
+export declare type MarketingFooterProps = React.PropsWithChildren<Partial<FlexProps> & {
     overrides?: MarketingFooterOverridesProps | undefined | null;
 }>;
 export default function MarketingFooter(props: MarketingFooterProps): React.ReactElement;

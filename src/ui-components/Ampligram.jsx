@@ -7,7 +7,7 @@
 /* eslint-disable */
 import * as React from "react";
 import { getOverrideProps } from "./utils";
-import { Divider, Flex, Icon, Image, Text, View } from "@aws-amplify/ui-react";
+import { Flex, Icon, Image, Text, View } from "@aws-amplify/ui-react";
 import MyIcon from "./MyIcon";
 export default function Ampligram(props) {
   const { overrides, ...rest } = props;
@@ -64,7 +64,7 @@ export default function Ampligram(props) {
             borderRadius="160px"
             padding="0px 0px 0px 0px"
             objectFit="cover"
-            {...getOverrideProps(overrides, "image29766764")}
+            {...getOverrideProps(overrides, "image41171791")}
           ></Image>
           <Text
             fontFamily="Inter"
@@ -112,7 +112,7 @@ export default function Ampligram(props) {
             shrink="0"
             position="relative"
             padding="0px 0px 0px 0px"
-            {...getOverrideProps(overrides, "Icon29766767")}
+            {...getOverrideProps(overrides, "Icon41171794")}
           >
             <Icon
               width="4px"
@@ -134,7 +134,7 @@ export default function Ampligram(props) {
               bottom="16.67%"
               left="41.67%"
               right="41.67%"
-              {...getOverrideProps(overrides, "Vector29766768")}
+              {...getOverrideProps(overrides, "Vector41171795")}
             ></Icon>
           </View>
         </Flex>
@@ -151,7 +151,7 @@ export default function Ampligram(props) {
         position="relative"
         padding="0px 0px 0px 0px"
         objectFit="cover"
-        {...getOverrideProps(overrides, "image29766769")}
+        {...getOverrideProps(overrides, "image41171796")}
       ></Image>
       <Flex
         gap="16px"
@@ -190,7 +190,7 @@ export default function Ampligram(props) {
             position="relative"
             padding="0px 0px 0px 0px"
             type="favorite_border"
-            {...getOverrideProps(overrides, "MyIcon29766772")}
+            {...getOverrideProps(overrides, "MyIcon41171799")}
           ></MyIcon>
           <MyIcon
             width="24px"
@@ -204,7 +204,7 @@ export default function Ampligram(props) {
             position="relative"
             padding="0px 0px 0px 0px"
             type="chat-bubble-outline"
-            {...getOverrideProps(overrides, "MyIcon29766773")}
+            {...getOverrideProps(overrides, "MyIcon41171800")}
           ></MyIcon>
           <MyIcon
             width="24px"
@@ -218,7 +218,7 @@ export default function Ampligram(props) {
             position="relative"
             padding="0px 0px 0px 0px"
             type="send"
-            {...getOverrideProps(overrides, "MyIcon29766774")}
+            {...getOverrideProps(overrides, "MyIcon41171801")}
           ></MyIcon>
         </Flex>
         <Flex
@@ -246,7 +246,7 @@ export default function Ampligram(props) {
             shrink="0"
             position="relative"
             padding="0px 0px 0px 0px"
-            {...getOverrideProps(overrides, "Icon29766776")}
+            {...getOverrideProps(overrides, "Icon41171803")}
           >
             <Icon
               width="14px"
@@ -268,7 +268,7 @@ export default function Ampligram(props) {
               bottom="12.5%"
               left="20.83%"
               right="20.83%"
-              {...getOverrideProps(overrides, "Vector29766777")}
+              {...getOverrideProps(overrides, "Vector41171804")}
             ></Icon>
           </View>
         </Flex>
@@ -286,15 +286,6 @@ export default function Ampligram(props) {
         padding="0px 0px 0px 0px"
         {...getOverrideProps(overrides, "Body")}
       >
-        <Divider
-          width="unset"
-          height="1px"
-          shrink="0"
-          alignSelf="stretch"
-          size="small"
-          orientation="horizontal"
-          {...getOverrideProps(overrides, "Divider")}
-        ></Divider>
         <Flex
           gap="8px"
           direction="column"

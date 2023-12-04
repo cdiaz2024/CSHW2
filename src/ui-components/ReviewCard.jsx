@@ -7,16 +7,7 @@
 /* eslint-disable */
 import * as React from "react";
 import { getOverrideProps } from "./utils";
-import {
-  Badge,
-  Divider,
-  Flex,
-  Icon,
-  Image,
-  Rating,
-  Text,
-  View,
-} from "@aws-amplify/ui-react";
+import { Flex, Icon, Image, Text, View } from "@aws-amplify/ui-react";
 export default function ReviewCard(props) {
   const { overrides, ...rest } = props;
   return (
@@ -126,12 +117,7 @@ export default function ReviewCard(props) {
               <Icon
                 width="20px"
                 height="18.35px"
-                viewBox={{
-                  minX: 0,
-                  minY: 0,
-                  width: 20,
-                  height: 18.35009765625,
-                }}
+                viewBox={{ minX: 0, minY: 0, width: 20, height: 18.349609375 }}
                 paths={[
                   {
                     d: "M14.5 0C12.76 0 11.09 0.81 10 2.09C8.91 0.81 7.24 0 5.5 0C2.42 0 0 2.42 0 5.5C0 9.28 3.4 12.36 8.55 17.04L10 18.35L11.45 17.03C16.6 12.36 20 9.28 20 5.5C20 2.42 17.58 0 14.5 0ZM10.1 15.55L10 15.65L9.9 15.55C5.14 11.24 2 8.39 2 5.5C2 3.5 3.5 2 5.5 2C7.04 2 8.54 2.99 9.07 4.36L10.94 4.36C11.46 2.99 12.96 2 14.5 2C16.5 2 18 3.5 18 5.5C18 8.39 14.86 11.24 10.1 15.55Z",
@@ -175,14 +161,11 @@ export default function ReviewCard(props) {
             {...getOverrideProps(overrides, "Classic Long Sleeve T-Shirt")}
           ></Text>
         </Flex>
-        <Divider
+        <View
           width="40px"
           height="1px"
-          shrink="0"
-          size="small"
-          orientation="horizontal"
           {...getOverrideProps(overrides, "Divider")}
-        ></Divider>
+        ></View>
         <Flex
           gap="8px"
           direction="column"
@@ -219,7 +202,7 @@ export default function ReviewCard(props) {
             children="Information about this product."
             {...getOverrideProps(
               overrides,
-              "Information about this product.29766836"
+              "Information about this product.41171862"
             )}
           ></Text>
           <Text
@@ -245,19 +228,15 @@ export default function ReviewCard(props) {
             children="Information about this product."
             {...getOverrideProps(
               overrides,
-              "Information about this product.29766837"
+              "Information about this product.41171863"
             )}
           ></Text>
         </Flex>
-        <Badge
+        <Flex
           width="unset"
           height="unset"
-          shrink="0"
-          size="small"
-          variation="default"
-          children="New!"
           {...getOverrideProps(overrides, "Badge")}
-        ></Badge>
+        ></Flex>
         <Flex
           gap="16px"
           direction="row"
@@ -281,15 +260,13 @@ export default function ReviewCard(props) {
             shrink="0"
             position="relative"
             padding="0px 0px 0px 0px"
-            {...getOverrideProps(overrides, "Rating29766840")}
+            {...getOverrideProps(overrides, "Rating41171866")}
           >
-            <Rating
+            <Flex
               width="unset"
               height="unset"
-              shrink="0"
-              size="large"
-              {...getOverrideProps(overrides, "Rating29766841")}
-            ></Rating>
+              {...getOverrideProps(overrides, "Rating41171867")}
+            ></Flex>
             <Text
               fontFamily="Inter"
               fontSize="16px"

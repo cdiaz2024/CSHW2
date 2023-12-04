@@ -6,52 +6,61 @@
 
 /* eslint-disable */
 import * as React from "react";
-import { getOverrideProps } from "./utils";
-import { Flex, Text } from "@aws-amplify/ui-react";
+import { getOverrideProps, useNavigateAction } from "./utils";
+import MyIcon from "./MyIcon";
+import LogoWithText from "./LogoWithText";
+import { Button, Flex } from "@aws-amplify/ui-react";
 export default function NavBar(props) {
   const { overrides, ...rest } = props;
+  const buttonOnClick = useNavigateAction({ type: "url", url: "/new" });
   return (
     <Flex
-      gap="20px"
+      gap="40px"
       direction="row"
-      width="184px"
-      height="unset"
+      width="718px"
+      height="109px"
       justifyContent="center"
       alignItems="center"
       position="relative"
+      boxShadow="0px 2px 6px rgba(0.05098039284348488, 0.10196078568696976, 0.14901961386203766, 0.15000000596046448)"
       padding="24px 32px 24px 32px"
       backgroundColor="rgba(255,255,255,1)"
       {...getOverrideProps(overrides, "NavBar")}
       {...rest}
     >
-      <Text
-        fontFamily="Inter"
-        fontSize="20px"
-        fontWeight="600"
-        color="rgba(0,0,0,1)"
-        textTransform="capitalize"
-        lineHeight="24.204544067382812px"
-        textAlign="left"
+      <MyIcon
+        width="24px"
+        height="24px"
         display="block"
-        direction="column"
-        justifyContent="unset"
-        width="unset"
-        height="unset"
         gap="unset"
         alignItems="unset"
+        justifyContent="unset"
+        overflow="hidden"
         shrink="0"
         position="relative"
         padding="0px 0px 0px 0px"
-        whiteSpace="pre-wrap"
-        children="Logo"
-        {...getOverrideProps(overrides, "Logo")}
-      ></Text>
+        type="home"
+        {...getOverrideProps(overrides, "MyIcon")}
+      ></MyIcon>
+      <LogoWithText
+        width="127.88px"
+        height="18.91px"
+        display="block"
+        gap="unset"
+        alignItems="unset"
+        justifyContent="unset"
+        shrink="0"
+        position="relative"
+        padding="0px 0px 0px 0px"
+        color="brand"
+        {...getOverrideProps(overrides, "LogoWithText")}
+      ></LogoWithText>
       <Flex
-        gap="40px"
+        gap="32px"
         direction="row"
         width="unset"
         height="unset"
-        justifyContent="space-between"
+        justifyContent="flex-end"
         alignItems="center"
         grow="1"
         shrink="1"
@@ -60,6 +69,19 @@ export default function NavBar(props) {
         padding="0px 0px 0px 0px"
         {...getOverrideProps(overrides, "Frame 321")}
       ></Flex>
+      <Button
+        width="unset"
+        height="unset"
+        shrink="0"
+        size="default"
+        isDisabled={false}
+        variation="primary"
+        children="+"
+        onClick={() => {
+          buttonOnClick();
+        }}
+        {...getOverrideProps(overrides, "Button")}
+      ></Button>
     </Flex>
   );
 }

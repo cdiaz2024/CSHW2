@@ -5,7 +5,7 @@
  **************************************************************************/
 
 import * as React from "react";
-import { DividerProps, FlexProps, IconProps, ImageProps, TextProps, ViewProps } from "@aws-amplify/ui-react";
+import { FlexProps, IconProps, ImageProps, TextProps, ViewProps } from "@aws-amplify/ui-react";
 import { MyIconProps } from "./MyIcon";
 export declare type EscapeHatchProps = {
     [elementHierarchy: string]: Record<string, unknown>;
@@ -22,22 +22,21 @@ export declare type AmpligramOverridesProps = {
     Ampligram?: PrimitiveOverrideProps<FlexProps>;
     Header?: PrimitiveOverrideProps<FlexProps>;
     Profile?: PrimitiveOverrideProps<FlexProps>;
-    image29766764?: PrimitiveOverrideProps<ImageProps>;
+    image41171791?: PrimitiveOverrideProps<ImageProps>;
     "Rene Brandel"?: PrimitiveOverrideProps<TextProps>;
     Overflow?: PrimitiveOverrideProps<FlexProps>;
-    Icon29766767?: PrimitiveOverrideProps<ViewProps>;
-    Vector29766768?: PrimitiveOverrideProps<IconProps>;
-    image29766769?: PrimitiveOverrideProps<ImageProps>;
+    Icon41171794?: PrimitiveOverrideProps<ViewProps>;
+    Vector41171795?: PrimitiveOverrideProps<IconProps>;
+    image41171796?: PrimitiveOverrideProps<ImageProps>;
     Options?: PrimitiveOverrideProps<FlexProps>;
     Share?: PrimitiveOverrideProps<FlexProps>;
-    MyIcon29766772?: MyIconProps;
-    MyIcon29766773?: MyIconProps;
-    MyIcon29766774?: MyIconProps;
+    MyIcon41171799?: MyIconProps;
+    MyIcon41171800?: MyIconProps;
+    MyIcon41171801?: MyIconProps;
     Bookmark?: PrimitiveOverrideProps<FlexProps>;
-    Icon29766776?: PrimitiveOverrideProps<ViewProps>;
-    Vector29766777?: PrimitiveOverrideProps<IconProps>;
+    Icon41171803?: PrimitiveOverrideProps<ViewProps>;
+    Vector41171804?: PrimitiveOverrideProps<IconProps>;
     Body?: PrimitiveOverrideProps<FlexProps>;
-    Divider?: PrimitiveOverrideProps<DividerProps>;
     Area?: PrimitiveOverrideProps<FlexProps>;
     "Firstname Lastname"?: PrimitiveOverrideProps<TextProps>;
     "\u201CLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.\u201D"?: PrimitiveOverrideProps<TextProps>;

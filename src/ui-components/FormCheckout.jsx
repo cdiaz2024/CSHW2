@@ -7,20 +7,12 @@
 /* eslint-disable */
 import * as React from "react";
 import { getOverrideProps } from "./utils";
-import {
-  Badge,
-  Button,
-  Divider,
-  Flex,
-  Text,
-  TextField,
-  View,
-} from "@aws-amplify/ui-react";
+import { Flex, Image, Text } from "@aws-amplify/ui-react";
 export default function FormCheckout(props) {
   const { overrides, ...rest } = props;
   return (
     <Flex
-      gap="24px"
+      gap="48px"
       direction="row"
       width="1160px"
       height="unset"
@@ -32,7 +24,7 @@ export default function FormCheckout(props) {
       {...rest}
     >
       <Flex
-        gap="0"
+        gap="48px"
         direction="row"
         width="unset"
         height="unset"
@@ -44,7 +36,7 @@ export default function FormCheckout(props) {
         position="relative"
         padding="32px 0px 32px 0px"
         backgroundColor="rgba(255,255,255,1)"
-        {...getOverrideProps(overrides, "Frame 411")}
+        {...getOverrideProps(overrides, "Frame 41141172045")}
       >
         <Flex
           gap="32px"
@@ -58,7 +50,7 @@ export default function FormCheckout(props) {
           basis="0"
           position="relative"
           padding="0px 0px 0px 0px"
-          {...getOverrideProps(overrides, "Frame 31329767006")}
+          {...getOverrideProps(overrides, "Frame 313")}
         >
           <Flex
             gap="24px"
@@ -76,7 +68,7 @@ export default function FormCheckout(props) {
             <Text
               fontFamily="Inter"
               fontSize="16px"
-              fontWeight="800"
+              fontWeight="600"
               color="rgba(13,26,38,1)"
               lineHeight="20px"
               textAlign="left"
@@ -91,45 +83,34 @@ export default function FormCheckout(props) {
               position="relative"
               padding="0px 0px 0px 0px"
               whiteSpace="pre-wrap"
-              children="Info"
-              {...getOverrideProps(overrides, "Info")}
+              children="Shipping information"
+              {...getOverrideProps(overrides, "Shipping information")}
             ></Text>
-            <TextField
+            <Flex
+              gap="24px"
+              direction="row"
               width="unset"
               height="unset"
-              label="Name"
+              justifyContent="flex-start"
+              alignItems="flex-start"
               shrink="0"
               alignSelf="stretch"
-              placeholder="Placeholder"
-              size="large"
-              isDisabled={false}
-              labelHidden={false}
-              variation="default"
-              {...getOverrideProps(overrides, "TextField29767009")}
-            ></TextField>
-            <TextField
-              width="unset"
-              height="unset"
-              label="Title"
-              shrink="0"
-              alignSelf="stretch"
-              placeholder="Placeholder"
-              size="large"
-              isDisabled={false}
-              labelHidden={false}
-              variation="default"
-              {...getOverrideProps(overrides, "TextField29767010")}
-            ></TextField>
+              position="relative"
+              padding="0px 0px 0px 0px"
+              {...getOverrideProps(overrides, "Frame 426")}
+            >
+              <Flex
+                width="unset"
+                height="unset"
+                {...getOverrideProps(overrides, "TextField41172050")}
+              ></Flex>
+              <Flex
+                width="unset"
+                height="unset"
+                {...getOverrideProps(overrides, "TextField41172051")}
+              ></Flex>
+            </Flex>
           </Flex>
-          <Divider
-            width="unset"
-            height="1px"
-            shrink="0"
-            alignSelf="stretch"
-            size="small"
-            orientation="horizontal"
-            {...getOverrideProps(overrides, "Divider29767011")}
-          ></Divider>
           <Flex
             gap="24px"
             direction="column"
@@ -143,421 +124,101 @@ export default function FormCheckout(props) {
             padding="0px 32px 0px 32px"
             {...getOverrideProps(overrides, "Frame 409")}
           >
-            <Text
-              fontFamily="Inter"
-              fontSize="16px"
-              fontWeight="800"
-              color="rgba(13,26,38,1)"
-              lineHeight="20px"
-              textAlign="left"
-              display="block"
-              direction="column"
-              justifyContent="unset"
+            <Flex
               width="unset"
               height="unset"
-              gap="unset"
-              alignItems="unset"
+              {...getOverrideProps(overrides, "TextField41172053")}
+            ></Flex>
+            <Flex
+              gap="24px"
+              direction="row"
+              width="unset"
+              height="unset"
+              justifyContent="flex-start"
+              alignItems="flex-start"
               shrink="0"
+              alignSelf="stretch"
               position="relative"
               padding="0px 0px 0px 0px"
-              whiteSpace="pre-wrap"
-              children="Shipping"
-              {...getOverrideProps(overrides, "Shipping29767013")}
-            ></Text>
-            <TextField
+              {...getOverrideProps(overrides, "Frame 425")}
+            >
+              <Flex
+                width="unset"
+                height="unset"
+                {...getOverrideProps(overrides, "TextField41172055")}
+              ></Flex>
+              <Flex
+                width="unset"
+                height="unset"
+                {...getOverrideProps(overrides, "TextField41172056")}
+              ></Flex>
+              <Flex
+                width="100px"
+                height="unset"
+                {...getOverrideProps(overrides, "SelectField")}
+              ></Flex>
+            </Flex>
+          </Flex>
+          <Flex
+            gap="24px"
+            direction="column"
+            width="unset"
+            height="unset"
+            justifyContent="flex-start"
+            alignItems="flex-start"
+            shrink="0"
+            alignSelf="stretch"
+            position="relative"
+            padding="0px 32px 0px 32px"
+            {...getOverrideProps(overrides, "Frame 410")}
+          >
+            <Flex
               width="unset"
               height="unset"
-              label="Street address"
-              shrink="0"
-              alignSelf="stretch"
-              placeholder="Placeholder"
-              size="large"
-              isDisabled={false}
-              labelHidden={false}
-              variation="default"
-              {...getOverrideProps(overrides, "TextField29767014")}
-            ></TextField>
-            <TextField
+              {...getOverrideProps(overrides, "TextField41172059")}
+            ></Flex>
+            <Flex
               width="unset"
               height="unset"
-              label="Zip code"
-              shrink="0"
-              alignSelf="stretch"
-              placeholder="Placeholder"
-              size="large"
-              isDisabled={false}
-              labelHidden={false}
-              variation="default"
-              {...getOverrideProps(overrides, "TextField29767015")}
-            ></TextField>
-            <TextField
+              {...getOverrideProps(overrides, "PhoneNumberField")}
+            ></Flex>
+          </Flex>
+          <Flex
+            gap="24px"
+            direction="column"
+            width="unset"
+            height="unset"
+            justifyContent="flex-start"
+            alignItems="flex-start"
+            shrink="0"
+            alignSelf="stretch"
+            position="relative"
+            padding="0px 32px 0px 32px"
+            {...getOverrideProps(overrides, "Frame 41141172061")}
+          >
+            <Flex
               width="unset"
               height="unset"
-              label="Country"
-              shrink="0"
-              alignSelf="stretch"
-              placeholder="Placeholder"
-              size="large"
-              isDisabled={false}
-              labelHidden={false}
-              variation="default"
-              {...getOverrideProps(overrides, "TextField29792893")}
-            ></TextField>
+              {...getOverrideProps(overrides, "Button")}
+            ></Flex>
           </Flex>
         </Flex>
-      </Flex>
-      <Flex
-        gap="32px"
-        direction="column"
-        width="453px"
-        height="unset"
-        justifyContent="flex-start"
-        alignItems="flex-start"
-        shrink="0"
-        position="relative"
-        padding="24px 24px 24px 24px"
-        backgroundColor="rgba(255,255,255,1)"
-        {...getOverrideProps(overrides, "Frame 412")}
-      >
-        <Badge
+        <Image
           width="unset"
           height="unset"
-          shrink="0"
-          alignSelf="stretch"
-          size="default"
-          variation="success"
-          children="Discount - 10% off"
-          {...getOverrideProps(overrides, "Badge")}
-        ></Badge>
-        <Flex
-          gap="128px"
-          direction="row"
-          width="unset"
-          height="unset"
-          justifyContent="space-between"
-          alignItems="center"
-          shrink="0"
+          display="block"
+          gap="unset"
+          alignItems="unset"
+          justifyContent="unset"
+          grow="1"
+          shrink="1"
+          basis="0"
           alignSelf="stretch"
           position="relative"
           padding="0px 0px 0px 0px"
-          {...getOverrideProps(overrides, "Frame 31329767067")}
-        >
-          <View
-            width="24px"
-            height="24px"
-            {...getOverrideProps(overrides, "MyIcon")}
-          ></View>
-          <Text
-            fontFamily="Inter"
-            fontSize="16px"
-            fontWeight="800"
-            color="rgba(13,26,38,1)"
-            lineHeight="20px"
-            textAlign="left"
-            display="block"
-            direction="column"
-            justifyContent="unset"
-            width="unset"
-            height="unset"
-            gap="unset"
-            alignItems="unset"
-            shrink="0"
-            position="relative"
-            padding="0px 0px 0px 0px"
-            whiteSpace="pre-wrap"
-            children="Cart (2)"
-            {...getOverrideProps(overrides, "Cart (2)")}
-          ></Text>
-          <Text
-            fontFamily="Inter"
-            fontSize="16px"
-            fontWeight="800"
-            color="rgba(13,26,38,1)"
-            lineHeight="20px"
-            textAlign="right"
-            display="block"
-            direction="column"
-            justifyContent="unset"
-            width="unset"
-            height="unset"
-            gap="unset"
-            alignItems="unset"
-            shrink="0"
-            position="relative"
-            padding="0px 0px 0px 0px"
-            whiteSpace="pre-wrap"
-            children="$101.70"
-            {...getOverrideProps(overrides, "$101.70")}
-          ></Text>
-        </Flex>
-        <Divider
-          width="unset"
-          height="1px"
-          shrink="0"
-          alignSelf="stretch"
-          size="small"
-          orientation="horizontal"
-          {...getOverrideProps(overrides, "Divider29767040")}
-        ></Divider>
-        <Flex
-          gap="262px"
-          direction="row"
-          width="unset"
-          height="unset"
-          justifyContent="space-between"
-          alignItems="center"
-          shrink="0"
-          alignSelf="stretch"
-          position="relative"
-          padding="0px 0px 0px 0px"
-          {...getOverrideProps(overrides, "Frame 316")}
-        >
-          <Text
-            fontFamily="Inter"
-            fontSize="16px"
-            fontWeight="400"
-            color="rgba(48,64,80,1)"
-            lineHeight="24px"
-            textAlign="left"
-            display="block"
-            direction="column"
-            justifyContent="unset"
-            letterSpacing="0.01px"
-            width="unset"
-            height="unset"
-            gap="unset"
-            alignItems="unset"
-            shrink="0"
-            position="relative"
-            padding="0px 0px 0px 0px"
-            whiteSpace="pre-wrap"
-            children="Subtotal"
-            {...getOverrideProps(overrides, "Subtotal")}
-          ></Text>
-          <Text
-            fontFamily="Inter"
-            fontSize="16px"
-            fontWeight="400"
-            color="rgba(13,26,38,1)"
-            lineHeight="24px"
-            textAlign="right"
-            display="block"
-            direction="column"
-            justifyContent="unset"
-            letterSpacing="0.01px"
-            width="unset"
-            height="unset"
-            gap="unset"
-            alignItems="unset"
-            shrink="0"
-            position="relative"
-            padding="0px 0px 0px 0px"
-            whiteSpace="pre-wrap"
-            children="$320.00"
-            {...getOverrideProps(overrides, "$320.00")}
-          ></Text>
-        </Flex>
-        <Flex
-          gap="273px"
-          direction="row"
-          width="unset"
-          height="unset"
-          justifyContent="space-between"
-          alignItems="center"
-          shrink="0"
-          alignSelf="stretch"
-          position="relative"
-          padding="0px 0px 0px 0px"
-          {...getOverrideProps(overrides, "Frame 317")}
-        >
-          <Text
-            fontFamily="Inter"
-            fontSize="16px"
-            fontWeight="400"
-            color="rgba(48,64,80,1)"
-            lineHeight="24px"
-            textAlign="left"
-            display="block"
-            direction="column"
-            justifyContent="unset"
-            letterSpacing="0.01px"
-            width="unset"
-            height="unset"
-            gap="unset"
-            alignItems="unset"
-            shrink="0"
-            position="relative"
-            padding="0px 0px 0px 0px"
-            whiteSpace="pre-wrap"
-            children="Shipping"
-            {...getOverrideProps(overrides, "Shipping29767056")}
-          ></Text>
-          <Text
-            fontFamily="Inter"
-            fontSize="16px"
-            fontWeight="400"
-            color="rgba(13,26,38,1)"
-            lineHeight="24px"
-            textAlign="right"
-            display="block"
-            direction="column"
-            justifyContent="unset"
-            letterSpacing="0.01px"
-            width="unset"
-            height="unset"
-            gap="unset"
-            alignItems="unset"
-            shrink="0"
-            position="relative"
-            padding="0px 0px 0px 0px"
-            whiteSpace="pre-wrap"
-            children="$15.00"
-            {...getOverrideProps(overrides, "$15.00")}
-          ></Text>
-        </Flex>
-        <Flex
-          gap="296px"
-          direction="row"
-          width="unset"
-          height="unset"
-          justifyContent="space-between"
-          alignItems="center"
-          shrink="0"
-          alignSelf="stretch"
-          position="relative"
-          padding="0px 0px 0px 0px"
-          {...getOverrideProps(overrides, "Frame 318")}
-        >
-          <Text
-            fontFamily="Inter"
-            fontSize="16px"
-            fontWeight="400"
-            color="rgba(48,64,80,1)"
-            lineHeight="24px"
-            textAlign="left"
-            display="block"
-            direction="column"
-            justifyContent="unset"
-            letterSpacing="0.01px"
-            width="unset"
-            height="unset"
-            gap="unset"
-            alignItems="unset"
-            shrink="0"
-            position="relative"
-            padding="0px 0px 0px 0px"
-            whiteSpace="pre-wrap"
-            children="Taxes"
-            {...getOverrideProps(overrides, "Taxes")}
-          ></Text>
-          <Text
-            fontFamily="Inter"
-            fontSize="16px"
-            fontWeight="400"
-            color="rgba(13,26,38,1)"
-            lineHeight="24px"
-            textAlign="right"
-            display="block"
-            direction="column"
-            justifyContent="unset"
-            letterSpacing="0.01px"
-            width="unset"
-            height="unset"
-            gap="unset"
-            alignItems="unset"
-            shrink="0"
-            position="relative"
-            padding="0px 0px 0px 0px"
-            whiteSpace="pre-wrap"
-            children="$26.80"
-            {...getOverrideProps(overrides, "$26.80")}
-          ></Text>
-        </Flex>
-        <Divider
-          width="unset"
-          height="1px"
-          shrink="0"
-          alignSelf="stretch"
-          size="small"
-          orientation="horizontal"
-          {...getOverrideProps(overrides, "Divider29767061")}
-        ></Divider>
-        <Flex
-          gap="290px"
-          direction="row"
-          width="unset"
-          height="unset"
-          justifyContent="space-between"
-          alignItems="center"
-          shrink="0"
-          alignSelf="stretch"
-          position="relative"
-          padding="0px 0px 0px 0px"
-          {...getOverrideProps(overrides, "Frame 319")}
-        >
-          <Text
-            fontFamily="Inter"
-            fontSize="16px"
-            fontWeight="700"
-            color="rgba(13,26,38,1)"
-            lineHeight="24px"
-            textAlign="left"
-            display="block"
-            direction="column"
-            justifyContent="unset"
-            width="unset"
-            height="unset"
-            gap="unset"
-            alignItems="unset"
-            shrink="0"
-            position="relative"
-            padding="0px 0px 0px 0px"
-            whiteSpace="pre-wrap"
-            children="Total"
-            {...getOverrideProps(overrides, "Total")}
-          ></Text>
-          <Text
-            fontFamily="Inter"
-            fontSize="16px"
-            fontWeight="700"
-            color="rgba(13,26,38,1)"
-            lineHeight="24px"
-            textAlign="right"
-            display="block"
-            direction="column"
-            justifyContent="unset"
-            width="unset"
-            height="unset"
-            gap="unset"
-            alignItems="unset"
-            shrink="0"
-            position="relative"
-            padding="0px 0px 0px 0px"
-            whiteSpace="pre-wrap"
-            children="$361.80"
-            {...getOverrideProps(overrides, "$361.80")}
-          ></Text>
-        </Flex>
-        <Divider
-          width="unset"
-          height="1px"
-          shrink="0"
-          alignSelf="stretch"
-          size="small"
-          orientation="horizontal"
-          {...getOverrideProps(overrides, "Divider29767065")}
-        ></Divider>
-        <Button
-          width="unset"
-          height="unset"
-          shrink="0"
-          alignSelf="stretch"
-          size="large"
-          isDisabled={false}
-          variation="primary"
-          children="Place Order"
-          {...getOverrideProps(overrides, "Button")}
-        ></Button>
+          objectFit="cover"
+          {...getOverrideProps(overrides, "image")}
+        ></Image>
       </Flex>
     </Flex>
   );
